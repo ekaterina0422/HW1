@@ -29,6 +29,13 @@ Here the results:
 print(maia)
 ```
 
+In summary, the data looks like this: 
+
+``` {r}
+
+summary(maia)
+```
+
 And here the mean of the quantitative severity level of the things she ate: 
 
 ```{r}
