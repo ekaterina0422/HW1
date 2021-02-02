@@ -1,0 +1,39 @@
+---
+title: "HW_1_Rojas"
+author: "Ekaterina"
+date: "2/2/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##MSCI 599: Marince Science Data with R 
+### Homework 1 - Things my dog Maia ate in the last two weeks 
+
+```{r}
+maia <- read.csv("data/hw1_Maia_things_she_ate.csv", header = TRUE, sep= ",")
+```
+
+This a list of things that my dog Maia ate in the past few weeks. I chose to collect these data because this is part of my life now as a human mom for a crazy 7-month puppy who thinks that all the things in the world are meant to be chewed. 
+
+*** 
+
+I calculated a quantitative and qualitative severity level of the things she ate based on my reaction and the outcome, consequences of the event. 
+
+Here the results: 
+
+``` {r}
+
+print(maia)
+```
+
+And here the mean of the quantitative severity level of the things she ate: 
+
+```{r}
+
+mean(maia$Quantitative.Severity.level)
+```
+Thus, the mean severity level for things that Maia ate are higher than 5. Which probably implies that she is a crazy puppy. 
+
