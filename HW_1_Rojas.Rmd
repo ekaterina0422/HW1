@@ -9,8 +9,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-##MSCI 599: Marince Science Data with R 
-### Homework 1 - Things my dog Maia ate in the last two weeks 
+# MSCI 599: Marince Science Data with R 
+
+## Homework 1 - Things my dog Maia ate in the last two weeks 
 
 ```{r}
 maia <- read.csv("data/hw1_Maia_things_she_ate.csv", header = TRUE, sep= ",")
@@ -20,7 +21,7 @@ This a list of things that my dog Maia ate in the past few weeks. I chose to col
 
 *** 
 
-I calculated a quantitative and qualitative severity level of the things she ate based on my reaction and the outcome, consequences of the event. 
+I calculated a quantitative and qualitative severity level of the things she ate based on my reaction, outcome and consequences of the event. 
 
 Here the results: 
 
@@ -40,7 +41,10 @@ And here the mean of the quantitative severity level of the things she ate:
 
 ```{r}
 
-mean(maia$Quantitative.Severity.level)
+mean(maia$Quant.Severity.level)
 ```
+
 Thus, the mean severity level for things that Maia ate are higher than 5. Which probably implies that she is a crazy puppy. 
+
+***
 

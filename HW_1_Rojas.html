@@ -195,11 +195,14 @@ summary {
 </div>
 
 
-<p>##MSCI 599: Marince Science Data with R ### Homework 1 - Things my dog Maia ate in the last two weeks</p>
+<div id="msci-599-marince-science-data-with-r" class="section level1">
+<h1>MSCI 599: Marince Science Data with R</h1>
+<div id="homework-1---things-my-dog-maia-ate-in-the-last-two-weeks" class="section level2">
+<h2>Homework 1 - Things my dog Maia ate in the last two weeks</h2>
 <pre class="r"><code>maia &lt;- read.csv(&quot;data/hw1_Maia_things_she_ate.csv&quot;, header = TRUE, sep= &quot;,&quot;)</code></pre>
 <p>This a list of things that my dog Maia ate in the past few weeks. I chose to collect these data because this is part of my life now as a human mom for a crazy 7-month puppy who thinks that all the things in the world are meant to be chewed.</p>
 <hr />
-<p>I calculated a quantitative and qualitative severity level of the things she ate based on my reaction and the outcome, consequences of the event.</p>
+<p>I calculated a quantitative and qualitative severity level of the things she ate based on my reaction, outcome and consequences of the event.</p>
 <p>Here the results:</p>
 <pre class="r"><code>print(maia)</code></pre>
 <pre><code>##    Things.my.dog.Maia.ate.in.the.last.2.weeks      My.expression
@@ -213,28 +216,17 @@ summary {
 ## 8                                     garlic          Ew times 3
 ## 9                             Tangerine peel  *Opens her mouth* 
 ## 10                                  My socks           DROP IT! 
-##    Quantitative.Severity.level Qualitative.severity.level
-## 1                           10                       High
-## 2                           10                      High 
-## 3                           10                      High 
-## 4                            4                       Low 
-## 5                            5                    Medium 
-## 6                            3                      Low  
-## 7                            6                    Medium 
-## 8                            7                    Medium 
-## 9                            1                        Low
-## 10                           2                        Low
-##                    Outcome
-## 1             Rabbies shot
-## 2             Rabbies shot
-## 3             Rabbies shot
-## 4               Both alive
-## 5     potential covid risk
-## 6      Rug can replace bed
-## 7         mild puppy farts
-## 8  more severe puppy farts
-## 9    no allergic reactions
-## 10          open toe socks</code></pre>
+##    Quant.Severity.level Qual.severity.level                 Outcome
+## 1                    10                High            Rabbies shot
+## 2                    10               High             Rabbies shot
+## 3                    10               High             Rabbies shot
+## 4                     4                Low               Both alive
+## 5                     5             Medium     potential covid risk
+## 6                     3               Low       Rug can replace bed
+## 7                     6             Medium         mild puppy farts
+## 8                     7             Medium  more severe puppy farts
+## 9                     1                 Low   no allergic reactions
+## 10                    2                 Low          open toe socks</code></pre>
 <p>In summary, the data looks like this:</p>
 <pre class="r"><code>summary(maia)</code></pre>
 <pre><code>##  Things.my.dog.Maia.ate.in.the.last.2.weeks My.expression     
@@ -244,17 +236,20 @@ summary {
 ##                                                               
 ##                                                               
 ##                                                               
-##  Quantitative.Severity.level Qualitative.severity.level   Outcome         
-##  Min.   : 1.00               Length:10                  Length:10         
-##  1st Qu.: 3.25               Class :character           Class :character  
-##  Median : 5.50               Mode  :character           Mode  :character  
-##  Mean   : 5.80                                                            
-##  3rd Qu.: 9.25                                                            
+##  Quant.Severity.level Qual.severity.level   Outcome         
+##  Min.   : 1.00        Length:10           Length:10         
+##  1st Qu.: 3.25        Class :character    Class :character  
+##  Median : 5.50        Mode  :character    Mode  :character  
+##  Mean   : 5.80                                              
+##  3rd Qu.: 9.25                                              
 ##  Max.   :10.00</code></pre>
 <p>And here the mean of the quantitative severity level of the things she ate:</p>
-<pre class="r"><code>mean(maia$Quantitative.Severity.level)</code></pre>
+<pre class="r"><code>mean(maia$Quant.Severity.level)</code></pre>
 <pre><code>## [1] 5.8</code></pre>
 <p>Thus, the mean severity level for things that Maia ate are higher than 5. Which probably implies that she is a crazy puppy.</p>
+<hr />
+</div>
+</div>
 
 
 
